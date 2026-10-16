@@ -41,7 +41,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Mish",
     img: "02mish.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notfemale: true 
     }
   },
