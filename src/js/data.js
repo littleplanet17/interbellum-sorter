@@ -20,4 +20,4 @@ let dataSetVersion = '';
 /**
  * Image root, will be appended to the start of every image URL.
  */
-const imageRoot = 'https://littleplanet17.github.io/chara-sorter/src/assets/charas/';
+const imageRoot = 'https://littleplanet17.github.io/interbellum-sorter/src/assets/charas/';
