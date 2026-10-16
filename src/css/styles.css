@@ -1,0 +1,370 @@
+body {
+  --main-color: #191919;
+  --bg-color: #FFFFFF;
+  --border-color: #191919;
+  --progress-bar-color: #104343;
+  --loading-pulse-color: #252525;
+  --link-color: #196969;
+  --link-hover-color: #0D3535;
+  --link-visited-color: #691919;
+
+  --image-bg-color: transparent;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  color-scheme: light;
+}
+
+body.darkmode {
+  --main-color: #FFFFFF;
+  --bg-color: #191919;
+  --border-color: #FFFFFF;
+  --progress-bar-color: #6C9F9F;
+  --loading-pulse-color: #F3F3F3;
+  --link-color: #196969;
+  --link-hover-color: #8DB5B5;
+  --link-visited-color: #691919;
+  color-scheme: dark;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.progress {
+  margin: 1em auto;
+  width: 500px;
+}
+
+.progressbar {
+  position: relative;
+  width: 492px;
+  border: 1px solid var(--border-color);
+  padding: 3px;
+  margin: 2px 0px;
+}
+
+.progresstext {
+  position: absolute;
+  width: 492px;
+  margin: 3px 0px;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.progressfill {
+  height: 20px;
+  background-color: var(--progress-bar-color);
+  width: 0%;
+}
+
+.sorter {
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: max-content 170px max-content;
+  grid-gap: 5px;
+}
+
+.button {
+  border: 1px solid var(--border-color);
+  text-align: center;
+  padding: 0.5em;
+  grid-column: 2 / 3;
+  cursor: pointer;
+}
+
+.starting.button, .sorting.button, .finished.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.starting.start.button {
+  grid-row: span 6;
+}
+
+.starting.load.button {
+  grid-row: span 3;
+}
+
+.sorting.button, .finished.button {
+  grid-row: span 2;
+}
+
+.loading.button {
+  grid-row: span 6;
+}
+
+.loading.button > div {
+  width: 25px;
+  height: 25px;
+  margin: 50px auto;
+  background-color: var(--loading-pulse-color);
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+/* Animation taken from: http://tobiasahlin.com/spinkit/ */
+
+.loading.button > span {
+  margin: auto auto 20%;
+  font-size: 0.7em;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.sorter > .image {
+  max-width: 180px;
+  max-height: 180px;
+  align-self: center;
+  grid-row: 1 / 7;
+  cursor: pointer;
+  background-color: var(--image-bg-color);
+}
+
+.sorter > .text {
+  min-width: 100%;
+  width: min-content;
+  min-height: 60px;
+  overflow-wrap: anywhere;
+}
+
+.sorter > .text > p {
+  margin: 0.5em 5px;
+  width: calc(100% - 10px);
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.sorter > .left {
+  grid-column: 1 / 2;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+.sorter > .right {
+  grid-column: 3 / 4;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+}
+
+.options {
+  margin: 1em auto;
+  display: grid;
+  text-align: left;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 450px;
+}
+
+.options > div {
+  font-size: 0.5625em;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:hover {
+  color: var(--link-color);
+}
+
+.options > .large.option, .options > hr {
+  grid-column: span 3;
+  text-align: center;
+  width: 100%;
+}
+
+.image.selector {
+  margin-top: 0.5em;
+  width: 500px;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.time.taken {
+  margin-top: 0.5em;
+  width: 500px;
+  text-align: center;
+  font-size: 0.75em;
+}
+
+.results {
+  font-size: 0.75em;
+  display: flex;
+  align-content: flex-start;
+  width: 80%;
+  margin: 2em auto;
+}
+
+@media all and (min-width: 600px) {
+  .results {
+    flex-flow: column wrap;
+    max-height: calc(5 * (175px + 2px) + 1 * (15px + 2px));
+    /* 2px for borders */
+  }
+}
+
+@media all and (max-width: 600px) {
+  .results {
+    flex-flow: column nowrap;
+  }
+}
+
+.result {
+  height: 15px;
+  margin-bottom: -1px;
+  display: grid;
+  width: 211px;
+  grid-template-columns: repeat(2, 1fr);
+  border: 1px solid var(--border-color);
+  margin-right: 5px;
+}
+
+.result.image {
+  height: 175px;
+}
+
+.result.image img {
+  height: 160px;
+  background-color: var(--image-bg-color);
+}
+
+.result.spacer {
+  height: 1px;
+  background-color: var(--main-color);
+}
+
+.result.head {
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
+
+.result > .left {
+  width: 35px;
+  padding: 1px 3px 1px 0.5em;
+  grid-column: 1 / 2;
+  text-align: right;
+}
+
+.result.image .left {
+  position: relative;
+}
+
+.result.image > .left span {
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  margin-top: -0.375em;
+}
+
+.result > .right {
+  width: 160px;
+  padding: 1px 0em 1px 0em;
+  grid-column: 2 / 3;
+  border-left: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.info {
+  margin: 2em auto 3em;
+  text-align: center;
+  font-size: 0.6875em;
+  width: 80%;
+  line-height: 1.2em;
+}
+
+a {
+  color: var(--link-color);
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--link-hover-color);
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+.changelog {
+  margin: auto;
+}
+
+.changelog td, .changelog th {
+  padding: 8px 5px;
+  vertical-align: middle;
+}
+
+.changelog td[rowspan], .changelog td[rowspan] ~ td {
+  border-top: 1px solid var(--border-color);
+}
+
+.changelog td[rowspan] {
+  text-align: right;
+}
+
+.colorchange {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+}
+
+.colorchange .toggle {
+  width: 100%;
+  height: 100%;
+
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+
+  cursor: pointer;
+  color: inherit;
+}
+
+.colorchange .toggle:hover {
+  color: var(--link-color);
+}
+
+.colorchange .toggle svg {
+  width: 100%;
+  height: 100%;
+}
+
+body:not(.darkmode) .colorchange .toggle svg.light,
+.darkmode .colorchange .toggle svg.dark {
+  display: none;
+}

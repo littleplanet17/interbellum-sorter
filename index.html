@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="shortcut icon" href="src/assets/hk017.ico" type="image/x-icon">
+  <link rel="icon" href="src/assets/hk017.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta name="og:site_name" content="Littleplanet17's Character Sorting">
+  <meta name="og:description" content="A simple, personal original character sorting website by hk017 based on Touhou Character Sorting">
+  <meta name="og:image" content="https://file.garden/Ze0GBAZmvAenbmMv/blog-assets/13-ban.jpg">
+  <title>Littleplanet17's Character Sorting</title>
+
+  <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="src/css/styles.css">
+
+  <script src="src/js/data.js"></script>
+  <script src="src/js/data/2026-10-05.js"></script>
+
+  <script src="src/js/html2canvas.min.js"></script>
+  <script src="src/js/lz-string.min.js"></script>
+  <script src="src/js/seedrandom.min.js"></script>
+  <script src="src/js/main.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="colorchange">
+        <button class="toggle">
+            <svg class="dark">
+                <use href="src/assets/dark-mode.svg#img"></use>
+            </svg>
+            <svg class="light">
+                <use href="src/assets/light-mode.svg#img"></use>
+            </svg>
+        </button>
+    </div>
+
+    <div class="progress hidden">
+        <span class="progressbattle"></span>
+        <div class="progressbar">
+            <div class="progressfill"><span class="progresstext"></span></div>
+        </div>
+    </div>
+
+    <div class="sorter">
+        <img src="src/assets/defaultL.png" class="left sort image">
+
+        <div class="starting start button">Click to Start!</div>
+        <div class="starting load button">Load <span></span></div>
+
+        <div class="loading button hidden"><div></div><span>Loading...</span></div>
+
+        <div class="sorting tie button hidden">Both</div>
+        <div class="sorting undo button hidden">Undo</div>
+        <div class="sorting save button hidden">Save Progress</div>
+
+        <div class="finished save button hidden">Generate Result URL</div>
+        <div class="finished getimg button hidden">Generate Image</div>
+        <div class="finished list button hidden">Generate Text List</div>
+
+        <img src="src/assets/defaultR.png" class="right sort image">
+
+        <div class="left sort text hidden"><p></p></div>
+        <div class="right sort text hidden"><p></p></div>
+    </div>
+
+    <div class="options"></div>
+    <div class="image selector hidden">Display Images on Result: </div>
+    <div class="time taken hidden"></div>
+    <div class="results"></div>
+
+    <div class="info">
+        <a href="https://github.com/execfera/charasort/">Source Code (EN)</a> | <a href="?IwVg7ADMCcYMwA5jEQHxMALBBCKuCgmMOWSjNPKJqMOJIdvrsYtJI6c64oepZtyg-lwG96AvpMaUq05oLKdarBdSbKe-IcpaTe7GpWMq2fOuLFHRIrWo76N08cZlbhU+a0-3Ls-SM9RzMdVx9TE2EIp2jZIVUJLwtoqOdUkwddG011HyoxYId3NTdYxXK9CP9igLdbdKyC4MCY9mtHToMmlJD3PvbLawS7FO4NVE4gA">Best Taste</a> | <a class="clearsave">Clear Save Data</a>
+        <br><br>
+
+        <p><strong>How to Play</strong></p>
+        <p>- Click on the character you like better from the two or tie them if you like them equally or don't know them.
+          <br>- <u>Don't forget to click <b>[Filter by Series Entry]</b>!</u> By doing so, you can select the characters based on their verses or mashes it up into any category you like!
+          <br>- You can click the light/dark version toggle on right top side for your preference!</p>
+        <br><br>
+
+        <p><strong>Keyboard controls</strong></p>
+        <p>H/LeftArrow (pick left) | J/DownArrow (undo) | K/UpArrow (tie) | L/RightArrow (pick right) | S (save progress).</p>
+        <p>Before sorting: S/Enter (start sorting) | L (load progress).</p>
+        <p>1/2/3 always correspond to the first/second/third buttons.</p>
+        <br><br>
+
+        <p><strong>Changelog</strong></p>
+        <p>October 5th, 2026 - Imported from Weebly to be embedded to <a href="https://littleplanet17.notion.site/piccolo-pianeta-2b5e9802833b813ea764cc406ede6050">Notion</a>.</p>
+        <br><br>
+      
+        <p>splash banner art by <a href="https://x.com/akeming_">akem</a> | Original sorter credit goes to <a href="http://mainyan.sakura.ne.jp/thsort.html">haru from E-Phantasm.</a> | Scripts (JP) by <a href="http://kouga.net/">migiwa from K-Factory</a>.</p>
+    </div>
+</div>
+</body>
+
+</html>
