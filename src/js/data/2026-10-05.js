@@ -1,4 +1,4 @@
-dataSetVersion = "2026-10-05";
+dataSetVersion = "2026-10-16";
 dataSet[dataSetVersion] = {};
 
 dataSet[dataSetVersion].options = [
@@ -8,9 +8,12 @@ dataSet[dataSetVersion].options = [
     tooltip: "Check this to restrict to certain verses.",
     checked: false,
     sub: [
-      { name: "Slice of Life", key: "SoL" },
-      { name: ".entourage", key: "ETG" },
-      { name: "#SubjectMadness!", key: "SM" },
+      { name: "Interbellum", key: "IB" },
+      { name: "Potterverse", key: "WW" },
+      { name: "Wonderverse", key: "WV" },
+      { name: "Gnosverse", key: "GV" },
+      { name: "Idolverse", key: "IV" },
+      { name: "Kingsman AU", key: "KV" },
     ]
   },
   {
@@ -27,466 +30,195 @@ dataSet[dataSetVersion].options = [
 
 dataSet[dataSetVersion].characterData = [
   {
-    name: "Kei Shindoune",
-    img: "sol01.png",
+    name: "Asha",
+    img: "01asha.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notfemale: true 
     }
   },
   {
-    name: "Kairi Hiiragizawa",
-    img: "sol02.png",
+    name: "Mish",
+    img: "02mish.png",
     opts: {
-      verses: ["SoL"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Yuu Naemoto",
-    img: "sol03.png",
-    opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notfemale: true 
     }
   },
   {
-    name: "Kai Shindoune",
-    img: "sol04.png",
+    name: "Arci",
+    img: "03arci.png",
     opts: {
-      verses: ["SoL"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Moira Verogli",
-    img: "sol05.png",
-    opts: {
-      verses: ["SoL"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Yuuya Hondou",
-    img: "sol06.png",
-    opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notfemale: true 
     }
   },
   {
-    name: "Yuuma Hondou",
-    img: "sol07.png",
+    name: "Tilla",
+    img: "04tilla.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notfemale: true 
     }
   },
   {
-    name: "Sanae Konishi",
-    img: "sol08.png",
+    name: "Adel",
+    img: "05adel.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notmale: true 
     }
   },
   {
-    name: "Riho Sanada",
-    img: "sol09.png",
+    name: "Boya",
+    img: "06boya.png",
     opts: {
-      verses: ["SoL"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Kyle Verogli",
-    img: "sol10.png",
-    opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notfemale: true 
     }
   },
   {
-    name: "Harley Wiese",
-    img: "sol11.png",
+    name: "Mari",
+    img: "07mari.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
+      notmale: true 
+    }
+  },
+  {
+    name: "Feli",
+    img: "08feli.png",
+    opts: {
+      verses: ["IB", "WW", "GV"],
+      notmale: true 
+    }
+  },
+  {
+    name: "Zhyr",
+    img: "09zhyr.png",
+    opts: {
+      verses: ["IB", "WW", "GV"],
+      notmale: true 
+    }
+  },
+  {
+    name: "Tedi",
+    img: "10tedi.png",
+    opts: {
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notfemale: true 
     }
   },
   {
-    name: "Fleur Pratt",
-    img: "sol12.png",
+    name: "Char",
+    img: "11char.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notmale: true 
     }
   },
   {
-    name: "Ayana Tateishi",
-    img: "sol13.png",
+    name: "Mur",
+    img: "12mur.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notmale: true 
     }
   },
   {
-    name: "Ryousuke Tateishi",
-    img: "sol14.png",
+    name: "Kay",
+    img: "13kay.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
+      notmale: true 
+    }
+  },
+  {
+    name: "Bay",
+    img: "14bay.png",
+    opts: {
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notfemale: true 
     }
   },
   {
-    name: "Claire-Ann Verogli",
-    img: "sol15.png",
+    name: "Neng",
+    img: "15neng.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notmale: true 
     }
   },
   {
-    name: "Yomi Hondou",
-    img: "sol16.png",
+    name: "Yos",
+    img: "16yos.png",
     opts: {
-      verses: ["SoL"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Taiga Hondou",
-    img: "sol17.png",
-    opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notfemale: true 
     }
   },
   {
-    name: "Asca Verogli",
-    img: "sol18.png",
+    name: "Franc",
+    img: "17franc.png",
     opts: {
-      verses: ["SoL"],
+      verses: ["IB", "WW", "GV"],
       notfemale: true 
     }
   },
   {
-    name: "Physics",
-    img: "sm01.png",
+    name: "Sen",
+    img: "18sen.png",
     opts: {
-      verses: ["SM"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notfemale: true 
     }
   },
   {
-    name: "Chemistry",
-    img: "sm02.png",
+    name: "Darus",
+    img: "19darus.png",
     opts: {
-      verses: ["SM"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notfemale: true 
     }
   },
   {
-    name: "Biology",
-    img: "sm03.png",
+    name: "Yom",
+    img: "20yom.png",
     opts: {
-      verses: ["SM"],
+      verses: ["IB", "WW", "GV"],
       notmale: true 
     }
   },
   {
-    name: "Geography",
-    img: "sm04.png",
+    name: "Eva",
+    img: "21eva.png",
     opts: {
-      verses: ["SM"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Sociology",
-    img: "sm05.png",
-    opts: {
-      verses: ["SM"],
+      verses: ["IB", "WW", "GV"],
       notmale: true 
     }
   },
   {
-    name: "Economics",
-    img: "sm06.png",
+    name: "Pili",
+    img: "22pili.png",
     opts: {
-      verses: ["SM"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Psychology",
-    img: "sm07.png",
-    opts: {
-      verses: ["SM"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "History",
-    img: "sm08.png",
-    opts: {
-      verses: ["SM"],
+      verses: ["IB", "WW", "GV"],
       notmale: true 
     }
   },
   {
-    name: "The Arts",
-    img: "sm09.png",
+    name: "Naya",
+    img: "23naya.png",
     opts: {
-      verses: ["SM"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Civics",
-    img: "sm10.png",
-    opts: {
-      verses: ["SM"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notmale: true 
     }
   },
   {
-    name: "Religion Studies",
-    img: "sm11.png",
+    name: "Klo",
+    img: "24klo.png",
     opts: {
-      verses: ["SM"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Linguistics",
-    img: "sm12.png",
-    opts: {
-      verses: ["SM"],
+      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
       notmale: true 
-    }
-  },
-  {
-    name: "Mathematics",
-    img: "sm13.png",
-    opts: {
-      verses: ["SM"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Informatics",
-    img: "sm14.png",
-    opts: {
-      verses: ["SM"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Environment Education",
-    img: "sm15.png",
-    opts: {
-      verses: ["SM"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Physical Education",
-    img: "sm16.png",
-    opts: {
-      verses: ["SM"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Family and Consumer Science",
-    img: "sm17.png",
-    opts: {
-      verses: ["SM"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Philosophy",
-    img: "sm18.png",
-    opts: {
-      verses: ["SM"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Esther Weidmann",
-    img: "etg01.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Nataniela Kaplanski",
-    img: "etg02.png",
-    opts: {
-      verses: ["ETG"]
-    }
-  },
-  {
-    name: "Yuriya Kalashnikov",
-    img: "etg03.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
-    }
-  },
- {
-    name: "Keira Hawthorne",
-    img: "etg04.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Geoffrey Bailey-Meagher",
-    img: "etg05.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Mikail Arshavin",
-    img: "etg06.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Attila Rafal Shafi",
-    img: "etg07.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Phillia Pinho",
-    img: "etg08.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Imogen Langley",
-    img: "etg09.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Bayuwira Natanegara",
-    img: "etg10.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Felicia Morra",
-    img: "etg11.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Kaylynn Yeager",
-    img: "etg12.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Sister Addie",
-    img: "etg13.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Sister Kalli",
-    img: "etg14.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Sister Riella",
-    img: "etg15.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Sister Mira",
-    img: "etg16.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Thaddeus Xanthos",
-    img: "etg17.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Kwan Wei",
-    img: "etg18.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Darayavaus Shiraz",
-    img: "etg19.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
-    }
-  },
-  {
-    name: "Erraine George",
-    img: "etg20.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Alexia Meagher",
-    img: "etg21.png",
-    opts: {
-      verses: ["ETG"],
-      notmale: true 
-    }
-  },
-  {
-    name: "Thomas Yorkshire",
-    img: "etg22.png",
-    opts: {
-      verses: ["ETG"],
-      notfemale: true 
     }
   }
 ];
