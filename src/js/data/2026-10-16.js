@@ -12,7 +12,7 @@ dataSet[dataSetVersion].options = [
       { name: "Potterverse", key: "WW" },
       { name: "Wonderverse", key: "WV" },
       { name: "Gnosverse", key: "GV" },
-      { name: "Idolverse", key: "IV" },
+      { name: "Modern AU", key: "MV" },
       { name: "Kingsman AU", key: "KV" },
     ]
   },
@@ -33,7 +33,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Asha",
     img: "01asha.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notfemale: true 
     }
   },
@@ -41,7 +41,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Mish",
     img: "02mish.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notfemale: true 
     }
   },
@@ -49,7 +49,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Arci",
     img: "03arci.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notfemale: true 
     }
   },
@@ -57,7 +57,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Tilla",
     img: "04tilla.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notfemale: true 
     }
   },
@@ -65,7 +65,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Adel",
     img: "05adel.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -73,7 +73,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Boya",
     img: "06boya.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notfemale: true 
     }
   },
@@ -81,7 +81,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Mari",
     img: "07mari.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -89,7 +89,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Feli",
     img: "08feli.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -97,7 +97,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Zhyr",
     img: "09zhyr.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -105,7 +105,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Tedi",
     img: "10tedi.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notfemale: true 
     }
   },
@@ -113,7 +113,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Char",
     img: "11char.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notmale: true 
     }
   },
@@ -121,7 +121,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Mur",
     img: "12mur.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notmale: true 
     }
   },
@@ -129,7 +129,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Kay",
     img: "13kay.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -137,7 +137,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Bay",
     img: "14bay.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notfemale: true 
     }
   },
@@ -145,7 +145,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Neng",
     img: "15neng.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -153,7 +153,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Yos",
     img: "16yos.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notfemale: true 
     }
   },
@@ -161,7 +161,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Franc",
     img: "17franc.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notfemale: true 
     }
   },
@@ -169,7 +169,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Sen",
     img: "18sen.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notfemale: true 
     }
   },
@@ -177,7 +177,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Darus",
     img: "19darus.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notfemale: true 
     }
   },
@@ -185,7 +185,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Yom",
     img: "20yom.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -193,7 +193,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Eva",
     img: "21eva.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -201,7 +201,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Pili",
     img: "22pili.png",
     opts: {
-      verses: ["IB", "WW", "GV"],
+      verses: ["IB", "WW", "MV", "GV"],
       notmale: true 
     }
   },
@@ -209,7 +209,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Naya",
     img: "23naya.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notmale: true 
     }
   },
@@ -217,7 +217,7 @@ dataSet[dataSetVersion].characterData = [
     name: "Klo",
     img: "24klo.png",
     opts: {
-      verses: ["IB", "WW", "WV", "GV", "IV", "KV"],
+      verses: ["IB", "WW", "WV", "GV", "MV", "KV"],
       notmale: true 
     }
   }
